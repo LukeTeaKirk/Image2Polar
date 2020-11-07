@@ -75,7 +75,6 @@ model.compile(loss = 'categorical_crossentropy', optimizer='rmsprop', metrics=['
 print (5)
 callbacks = myCallback()
 
-
 history = model.fit(train_generator, epochs=4, steps_per_epoch=200, validation_data = validation_generator, verbose = 1, validation_steps=25, callbacks=[callbacks])
 print (6)
 
